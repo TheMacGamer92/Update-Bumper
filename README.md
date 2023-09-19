@@ -14,6 +14,7 @@ Once added, change the following to your liking:
 
 # User notification
 title=
+
 message=
 # Icon
 iconPath=
