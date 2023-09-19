@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Created by TheMacGamer92, this is an opensource system that does not require a license to use
+
 # User notification
 title="Software Update Available"
 message="A required security update is available. Please click the 'Update Now' button and follow the onscreen prompt to start the update process."
