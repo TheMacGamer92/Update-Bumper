@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Created by TheMacGamer92, this is an opensource system that does not require a license to use
+# Created by TheMacGamer92, this is an open source system that does not require a license to use
 
 # User notification
 title="Software Update Available"
