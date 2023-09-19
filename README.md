@@ -1,7 +1,7 @@
 # Update-Bumper
 
 Overview:
-This is a system that utilizes Jamf Helper and bash/osa scripting to notify a user that their computer is out of date. Once the user clicks "Update Now" System Preferences will automatically open and bring the update pane to the front of the screen.
+This is a system that utilizes Jamf Helper and shell/osa scripting to notify a user that their computer is out of date. Once the user clicks "Update Now" System Preferences will automatically open and bring the update pane to the front of the screen.
 It does not matter if System Preferences is already running and on a different pane, it will always reopen and bring up the update pane. This is meant to make bumping users to update as simple as possible, not utilizing any external apps (other than Jamf helper) and to make update management and scaling easier. 
 
 Supported systems:
