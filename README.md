@@ -1,7 +1,14 @@
 # Update-Bumper
-This is a system that utilizes Jamf Helper and bash/osa scripting to notify a user that their computer is out of date. Once the user clicks "Update Now" System Preferences will automatically open and bring the update pane to the front of the screen.
-It does not matter is System Preferences is already running and on a different pane, it will always reopen and bring up the updates pane. 
 
+Overview:
+This is a system that utilizes Jamf Helper and bash/osa scripting to notify a user that their computer is out of date. Once the user clicks "Update Now" System Preferences will automatically open and bring the update pane to the front of the screen.
+It does not matter if System Preferences is already running and on a different pane, it will always reopen and bring up the update pane. This is meant to make bumping users to update as simple as possible, not utilizing any external apps (other than Jamf helper) and to make update management and scaling easier. 
+
+Supported systems:
+This works on both Intel and Apple Silcon devices, tested on macOS Monteray and Ventura, I have not tested with a Sonoma beta.
+
+
+Deployment:
 To deploy, copy the script and paste it into Jamf Pro as a new script.
 Once added, change the following to your liking:
 
@@ -12,10 +19,7 @@ message=
 iconPath=
 
 Add the script to a policy and scope your devices. I recommend using a smart group with the target minumum OS version, also make sure to exclude hardware that is not able to run the lastest versions of macOS.
-
-This works on both Intel and Apple Silcon devices, tested on macOS Monteray and Ventura, I have not tested with a Sonoma beta.
-
-
+I would also recomend pushing a config profile that tells computers to automatically download updates as they release.
 
 An example of the pop-up message:
 
