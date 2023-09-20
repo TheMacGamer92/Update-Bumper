@@ -15,7 +15,7 @@ iconPath="/System/Library/CoreServices/CoreTypes.bundle/Contents/Resources/Toolb
 # Button
 buttonClicked=$("$jamfHelper" -windowType utility -title "$title" -description "$message" -icon "$iconPath" -button1 "Update Now" -defaultButton 1)
 
-# Check which button was clicked
+# Check if the "Update Now" button was clicked
 if [ "$buttonClicked" == "0" ]; then
     # "Update Now" button was clicked
     # Check if System Preferences is running and close it if it is
