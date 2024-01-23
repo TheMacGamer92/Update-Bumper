@@ -5,7 +5,7 @@ This is a system that utilizes Jamf Helper and shell/osa scripting to notify a u
 It does not matter if System Preferences is already running and on a different pane, it will always reopen and bring up the update pane. This is meant to make bumping users to update as simple as possible, not utilizing any external apps (other than Jamf helper) and to make update management and scaling easier. 
 
 Supported systems:
-This works on both Intel and Apple Silicon devices, tested on macOS Monteray and Ventura, I have not tested with Sonoma.
+This works on both Intel and Apple Silicon devices, tested and fully functional on macOS Monteray and Ventura. Apple seems to have changed how osa calls different buttons in System Preferences in macOS Sonoma. This system will still work, but will only take System Preferences to the "General" tab. The user will need to manually click "Software Updates". I have not had any luck scripting in the command to auto click the "Software Udpates" button. For now, I would add that step to the prompt for the user to read and follow. 
 
 
 Deployment:
